@@ -1,18 +1,8 @@
----
-## ZENODO PUBLIC METADATA — use this as the deposit abstract only
-## Deposit now, lock the file behind embargo until after LF/POCI exit
-## Do not paste the full document below into the public abstract field
-
-A proof of efficacy cannot originate from the entity whose efficacy is in question. This specification formalizes that claim, the Self-Attestation Oxymoron, and defines why structural independence, not procedural rigor or cryptographic integrity alone, is the only property that resolves it. Companion to PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement).
-
-## END PUBLIC METADATA — everything below stays inside the embargoed file
----
-
 # PP-SPEC-024: The Self-Attestation Oxymoron
 
 **Status:** Published
 **Author:** Craig Ellrod
-**Date:** Sept 17, 2026
+**Date:** September 18, 2026
 **License:** CC BY-ND 4.0
 **Related:** PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement)
 
@@ -42,4 +32,4 @@ This spec makes a structural claim, not an accusation against any named individu
 
 ## Provenance
 
-This document is timestamped and anchored via Zenodo, DOI [INSERT DOI], as of the publication date above.
+This document is timestamped and anchored via Zenodo, DOI https://doi.org/10.5281/zenodo.22821265, as of the publication date above.
