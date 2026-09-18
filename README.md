@@ -1,47 +1,37 @@
----
-## ZENODO PUBLIC METADATA — use this as the deposit abstract only
-## Deposit now, lock the file behind Restricted access until after LF/POCI exit
-## Do not paste the full document below into the public abstract field
+# PP-SPEC-024: The Self-Attestation Oxymoron
 
-Independence is not binary. This specification defines a three-tier disclosure taxonomy, Vendor-Funded, Buyer-Funded, and PESA-Governed, describing the funding relationship behind any Proof Protocol certification mark, and requires that tier be published alongside every stamp. Companion to PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement) and PP-SPEC-024 (The Self-Attestation Oxymoron).
-
-## END PUBLIC METADATA — everything below stays inside the restricted file
----
-
-# PP-SPEC-025: Funding tier disclosure oxymoron
-
-## Funding Tier Oxymoron
-
-**Status:** Draft — held pending release
+**Status:** Published
 **Author:** Craig Ellrod
 **Date:** September 18, 2026
 **License:** CC BY-ND 4.0
-**Related:** PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement), PP-SPEC-024 (The Self-Attestation Oxymoron)
+**Related:** PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement)
 
 ## Summary
 
-A certification mark that displays a score without its funding tier makes an implicit claim: that independence is uniform across every mark bearing that score, regardless of who paid for the assessment or how. That claim is false, and treating it as though it isn't is its own small version of the Self-Attestation Oxymoron, a mark presents itself as evidence of independence while withholding the one fact a reader would need to actually judge that independence. This is the **Funding Tier Oxymoron**: a mark cannot function as independent proof while concealing the funding relationship that determines how independent it actually was. This specification resolves it, not by ruling out any particular funding relationship, PP-SPEC-023 and PP-SPEC-024 already handle which relationships are disqualifying entirely, but by requiring that whichever valid relationship remains be disclosed on the mark itself, in the same place and with the same prominence as the score.
+A proof of efficacy cannot originate from the entity whose efficacy is in question. This is not a best practice or a recommendation. It is a structural impossibility, independent of the honesty, competence, or good faith of the entity involved. This spec states the claim precisely and shows why no amount of process improvement inside a self-attestation model can fix it.
 
-**Distinction from PP-SPEC-024.** The Funding Oxymoron defined in PP-SPEC-024 is institutional: a framework cannot be independently governed by funders drawn from the population it certifies. The Funding Tier Oxymoron here is a different pattern at a different scale: an individual certification mark cannot claim independence while hiding which of several valid funding tiers actually produced it. The first is about who governs the standard. The second is about what a single mark discloses. Related in structure, not identical in scope, and neither substitutes for the other.
+## The Claim
 
-## The Three Tiers
+Self-attestation, as a category, asks an entity to produce evidence of its own performance and submit that evidence as proof. The word "proof" in this context is doing work it cannot support. Proof requires a standard external to the claim being verified. Self-attestation supplies no external standard. The entity being measured and the entity producing the measurement are the same entity. This is the oxymoron: "self-attested proof" describes something that is definitionally not proof, using the vocabulary of proof to describe its absence.
 
-**Tier 1 — Vendor-Funded.** The assessed party funds the assessment directly, as a one-time fee or ongoing subscription. Valid only when all of the following hold without exception: the fee is flat and published, with no component contingent on outcome; the pass/fail threshold is mechanical and public, with no discretionary step a payment could influence; every assessment run, regardless of result, is written permanently to ProofRegister at the moment of generation, independent of whether the vendor's engagement continues. Absence of any one of these three disqualifies the assessment from issuing a mark at all, not merely from claiming Tier 1.
+## Why More Rigor Does Not Fix It
 
-**Tier 2 — Buyer-Funded.** A party other than the assessed vendor, a customer, a procurement body, or a buyer-side coalition, funds the assessment because it wants an accurate reading rather than a favorable one. Structurally stronger than Tier 1 because the payer's financial interest runs in the same direction as the accuracy of the result rather than in tension with it. Still a financial relationship and still disclosed as such; Tier 2 is a materially different claim from no financial relationship at all, not an equivalent one.
+The common objection is that self-attestation can be made rigorous: detailed methodology documentation, internal audit trails, signed executive certifications, published test procedures. None of this changes the structure. Rigor improves the quality of a self-generated claim. It does not convert a self-generated claim into independent evidence, because rigor operates inside the same trust boundary the oxymoron identifies. A more detailed self-attestation is still self-attestation. Adding steps to a process controlled by the party with the incentive to produce a favorable outcome does not remove that incentive from the process.
 
-**Tier 3 — PESA-Governed.** The assessment is funded through the pooled PESA structure rather than a traceable transaction between the assessor and either the assessed vendor or a specific buyer. No individual payer's satisfaction can be tied to a specific result, because no individual payer funded that specific result. This is the tier that removes the incentive-alignment risk present in Tiers 1 and 2, rather than only mitigating it through safeguards.
+This is why cryptographic integrity, on its own, does not resolve the oxymoron either. A hash-chained, tamper-evident, timestamped self-attestation is still self-attested. Integrity proves the record was not altered after capture. It says nothing about who controlled what went into the record before capture. See PP-SPEC-023 for the fidelity-at-capture distinction this implies.
 
-## Disclosure Requirement
+## What Resolves It
 
-Every mark issued under Proof Protocol displays its funding tier as a permanent, equally prominent field alongside the PES score, on both the human-readable certificate and the ProofRegister metadata record. A score without a tier is an incomplete claim. "PES 94%, Tier 1, Vendor-Funded" and "PES 94%, Tier 3, PESA-Governed" are different statements about the same number, and the reader is entitled to know which one they are looking at before drawing a conclusion from the score alone.
+Only structural independence resolves the oxymoron, defined precisely: no outcome-contingent financial relationship, no ceded operational control, no reporting relationship, and no return-engagement incentive (remediation sales, consulting, repeat certification revenue) tied to producing a favorable result for the party being measured. This is not the absence of payment. An assessor can be compensated for the act of assessment without violating independence, the same way audit independence rules permit paid audits while prohibiting contingent fees and conflicting service relationships. What voids independence is compensation, direct or structural, that depends on the outcome being favorable. This is not a spectrum where more independence is marginally better. Below full structural independence as defined here, the oxymoron still applies in degree, since any residual outcome-dependent relationship reintroduces the same incentive problem the model is meant to eliminate.
 
-## Relation to PP-SPEC-024
+This has a direct governance implication, visible at the organizational level even where no individual conflict of interest exists. A conformance framework whose top-tier funders also hold governance seats on the neutral body stewarding it has not solved the oxymoron, it has moved it up one level. The same organization funding the framework's institutional home and building the products that framework will certify creates the identical incentive structure self-attestation was meant to replace, whether or not any single person sits on both sides of that relationship. Rigor in how the standard is drafted does not fix this, for the same reason rigor does not fix self-attestation generally, the fix has to be structural, not a matter of who staffs which seat.
 
-PP-SPEC-024 establishes that self-attestation cannot be fixed by rigor applied inside the same structure. This spec extends that principle to funding: rigor applied inside a Tier 1 relationship, however well safeguarded, does not become a Tier 3 relationship. The safeguards in PP-SPEC-023 make Tier 1 valid. They do not make it equivalent to Tier 3. Conflating validity with equivalence is a smaller version of the same category error PP-SPEC-024 identifies in self-attestation generally.
+**The Funding Oxymoron.** A framework cannot be independently governed by a funding structure in which the entities paying for governance influence are drawn from the same population the framework will certify. This is the institutional-level restatement of the Self-Attestation Oxymoron: where the base claim is that an entity cannot supply proof of its own efficacy, the Funding Oxymoron is that an entity cannot fund its own oversight and have that oversight remain independent of it, regardless of how the funding is structured, disclosed, or governed by policy on paper. A published conflict-of-interest policy, a recusal rule, or a stated commitment to neutrality does not resolve this any more than a detailed methodology resolves self-attestation, because the incentive exists prior to and independent of any individual's compliance with the policy. The Funding Oxymoron does not require that any funder intends to exert influence, hold any particular seat, or hold a product in the certification's scope. Structural presence in both roles, funder of the governing body and member of the population governed, is sufficient on its own to reproduce the pattern this specification describes.
 
-See the Summary above for how this specification's Funding Tier Oxymoron relates to, and differs in scope from, the institutional Funding Oxymoron defined in PP-SPEC-024.
+## Scope
+
+This spec makes a structural claim, not an accusation against any named individual or organization's intent. The failure mode described here occurs regardless of whether anyone involved is acting in bad faith. That is precisely why it cannot be fixed by better people following the same structure. It requires a different structure.
 
 ## Provenance
 
-This document is timestamped and anchored via Zenodo, DOI [10.5281/zenodo.22833356](https://doi.org/10.5281/zenodo.22833356), as of the publication date above.
+This document is timestamped and anchored via Zenodo, DOI https://doi.org/10.5281/zenodo.22821265, as of the publication date above.
