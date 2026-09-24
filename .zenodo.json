@@ -1,0 +1,25 @@
+{
+  "title": "PP-SPEC-024: The Self-Attestation Oxymoron",
+  "upload_type": "publication",
+  "creators": [
+    {
+      "name": "Ellrod, Craig",
+      "affiliation": "Nebulonium, Inc. (HACKERverse)"
+    }
+  ],
+  "description": "PP-SPEC-024: The Self-Attestation Oxymoron",
+  "license": "cc-by-nd-4.0",
+  "access_right": "open",
+  "keywords": [
+    "proof-protocol",
+    "self-attestation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/proofprotocol/Self-Attestation-Oxymoron",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "publication_type": "technicalnote"
+}
