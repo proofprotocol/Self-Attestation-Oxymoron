@@ -6,6 +6,11 @@
 **License:** CC BY-ND 4.0
 **Related:** PP-SPEC-023 (Structural Independence and the Fidelity-at-Capture Requirement)
 
+## Cite as
+
+Ellrod, C. (2026). PP-SPEC-024: The Self-Attestation Oxymoron.
+Proof Economy Standards Alliance (PESA). https://doi.org/10.5281/zenodo.22821265
+
 ## Summary
 
 A proof of efficacy cannot originate from the entity whose efficacy is in question. This is not a best practice or a recommendation. It is a structural impossibility, independent of the honesty, competence, or good faith of the entity involved. This spec states the claim precisely and shows why no amount of process improvement inside a self-attestation model can fix it.
