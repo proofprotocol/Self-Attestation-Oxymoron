@@ -9,7 +9,7 @@
 ## Cite as
 
 Ellrod, C. (2026). PP-SPEC-024: The Self-Attestation Oxymoron.
-Proof Economy Standards Alliance (PESA). https://doi.org/10.5281/zenodo.22821265
+Proof Economy Standards Alliance (PESA). https://doi.org/10.5281/zenodo.22821264
 
 ## Summary
 
